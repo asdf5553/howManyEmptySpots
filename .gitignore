@@ -1,6 +1,13 @@
-*.class
-
-# Package Files #
-*.jar
-*.war
-*.ear
+public int howManyEmptySpots(String [] arr)
+{
+  int length = arr.length;
+  int countnull = 0;
+  for (int x=0; x<length; x++)
+  {
+  if (arr[x]==null)
+  {
+  countnull++;
+  }
+  }
+  return countnull;
+}
